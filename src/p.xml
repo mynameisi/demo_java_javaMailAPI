@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>这里面放着用Java写邮件必要的数据</comment>
+	<!-- 发送方服务器相关信息 -->
+	<entry key="mail.sender">testmailclient@126.com</entry><!-- 发送方邮件地址,改成你自己的邮箱 -->
+
+	<entry key="mail.sender.protocol">smtp</entry><!-- 发送方邮件发送协议 -->
+
+	<!-- Session需要参数，不能修改参数名称 -->
+	<entry key="mail.smtp.host">smtp.126.com</entry><!-- 发送方服务器地址,要用你的邮箱的服务器 -->
+	<entry key="mail.smtp.auth">true</entry><!-- 发送方是否需要认证 -->
+	<entry key="mail.debug">true</entry><!-- 是否需要在发送邮件的时候打印相关调试细节 -->
+
+	<!-- 发送方账户相关信息 -->
+
+	<entry key="mail.sender.name">XXXXXXXX</entry><!-- 发送方用户名 -->
+	<entry key="mail.sender.pass">YYYYYYYY</entry><!-- 发送方密码 -->
+
+	<!-- 接受方地址列表 -->
+	<entry key="mail.receiver">
+		410145576@qq.com
+		testmailclient@126.com
+	</entry>
+
+	<!-- 邮件相关信息 -->
+	<entry key="mail.subject">这是一个尝试用Java发送的Email</entry>
+
+	<entry key="mail.txt">
+	<![CDATA[
+		这是一个尝试用Java发送的Email
+		因为我的Property文件使用的是XML
+		所以可以实现多行的结果
+		而且，因为使用了CDATA
+		所以很多符号：～！@#￥%……&*（）——+《》？<> 都可以直接的输入了
+	]]>
+	</entry>
+
+
+
+
+</properties>
